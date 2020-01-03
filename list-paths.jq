@@ -4,3 +4,6 @@
 # 2 - Keeps only the keys in paths (/whatever)
 #---------------------------------------------
 | keys
+# 3 - Flattens the array (for raw output)
+#---------------------------------------- 
+[]
