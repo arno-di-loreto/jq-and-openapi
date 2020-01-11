@@ -24,3 +24,6 @@
 #--------------------------------------------
 # It returns ["get", "post"]
 | unique # Keeps only an occurence of each element
+# 4 - Generates raw string
+#-------------------------
+[] # Flattens array for raw output
