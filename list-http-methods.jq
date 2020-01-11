@@ -20,3 +20,7 @@
       "options", "head", "patch", "trace")
   )
 )
+# 3 - Keeps an occurrence of each HTTP method
+#--------------------------------------------
+# It returns ["get", "post"]
+| unique # Keeps only an occurence of each element
