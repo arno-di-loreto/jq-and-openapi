@@ -17,4 +17,15 @@
     test("^x-") # Returns true if value match the regex parameter
     | not # Returns the opposite of a boolean value
   )
+) 
+# 3 - Counts how many times each code is used
+#--------------------------------------------
+# It returns [ {"code": "404", "count": 1}, 
+#              {"code": "200", "count": 2} ]
+| group_by(.) # ["404", "200", "200"] ➡️ [["400"],["200", "200"]]
+| map( # Applies a filter to each element
+  { # Creates an object
+    code: . | unique[], # ["200", "200"] ➡️ ["200"] ➡️ "200"
+    count: (. | length) # ["200", "200"] ➡️ 2
+  }
 )
