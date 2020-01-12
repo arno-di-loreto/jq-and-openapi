@@ -44,7 +44,7 @@
 | map( # Applies a transformation to each element
   .method + "\t" + 
   .path + "\t" + 
-  (if .summary then  .summary else "" end) + 
+  .summary + 
   (if .deprecated then " (deprecated)" else "" end)
 )
 [] # Flattens array for raw output
