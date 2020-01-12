@@ -34,3 +34,12 @@
 # It returns [ {"code": "200", "count": 2}, 
 #              {"code": "404", "count": 1} ]
 | sort_by(-.count) # Sort array by parameter value
+# 5 - Generates tab separated string output
+#------------------------------------------
+| map( # Applies a filter to each element
+  .code + 
+  "\t" + 
+  (.count | tostring) # count is a number
+                      # it must be converted to string
+                      # to be concatenated to other string
+)[] # Flattens array for raw output
