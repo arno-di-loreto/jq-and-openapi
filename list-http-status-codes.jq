@@ -29,3 +29,8 @@
     count: (. | length) # ["200", "200"] ➡️ 2
   }
 )
+# 4 - Sorts by descending count
+#------------------------------
+# It returns [ {"code": "200", "count": 2}, 
+#              {"code": "404", "count": 1} ]
+| sort_by(-.count) # Sort array by parameter value
