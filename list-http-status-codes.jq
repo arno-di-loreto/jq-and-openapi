@@ -9,3 +9,12 @@
   | .[] # [ ["404", "200"], ["200", "x-example"] ] ⤵️
       #                     ["404", "200", "200", "x-example"]
 ]
+# 2 - Removes x- properties
+#--------------------------
+# It returns ["200", "404", "200"]
+| map( # Applies a filter to each element
+  select( # Keep elements for which what follows return true
+    test("^x-") # Returns true if value match the regex parameter
+    | not # Returns the opposite of a boolean value
+  )
+)
