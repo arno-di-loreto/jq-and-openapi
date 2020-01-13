@@ -15,3 +15,20 @@
     | test("^x-") # Checks if leaf name starts with x-
   )
 ]
+# 3 - Sets all data for each extension occurence
+#-----------------------------------------------
+| map( # Applies a filter to each element
+    # 3.1 - Creates a JSON pointer to extension
+    #------------------------------------------
+      "#/" + # adds numbers, strings, arrays or objects
+      (
+        map_values( # Applies a filter on each value
+                    # (in place modification)
+          gsub("/";"~1" ) # replaces a value in a string
+                          # / must be replace by ~1
+                          # in a JSON pointer
+        )
+        | join("/") # concatenates string with 
+                  # a separator
+      )
+)
