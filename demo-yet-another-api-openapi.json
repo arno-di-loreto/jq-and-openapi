@@ -1,0 +1,1 @@
+{"openapi":"3.0.0","info":{"title":"Yet Another API","version":"2.0","description":"Very short description."},"paths":{"/resources":{"get":{"description":"Gets some resources","x-tension-example":{"some":"value"},"responses":{"200":{"description":"The resources"}}}}}}
