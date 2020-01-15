@@ -1,4 +1,4 @@
-# INVISIBLE: git checkout tags/final list-http-methods.jq &>/dev/null
+git checkout tags/final list-http-methods.jq &>/dev/null # INVISIBLE
 # TITLE: API Toolbox - JQ and OpenAPI - Using JQ to extract data from OpenAPI files
 # ROOT: apihandyman.io
 # SECTION: HTTP methods
@@ -65,4 +65,4 @@ bat -r 23: list-http-methods.jq
 # And for the final step the script only flattens the result for the raw output
 git checkout tags/list-http-methods-4 list-http-methods.jq
 bat -r 27: list-http-methods.jq
-# INVISIBLE: git checkout tags/final list-http-methods.jq &>/dev/null
+git checkout tags/final list-http-methods.jq &>/dev/null # INVISIBLE

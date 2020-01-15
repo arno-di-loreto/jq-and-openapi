@@ -1,4 +1,4 @@
-# INVISIBLE: git checkout tags/final list-paths.jq &>/dev/null
+git checkout tags/final list-paths.jq &>/dev/null # INVISIBLE
 # TITLE: API Toolbox - JQ and OpenAPI - Using JQ to extract data from OpenAPI files
 # ROOT: apihandyman.io
 # SECTION: list paths
@@ -29,4 +29,4 @@ git checkout tags/list-paths-3 list-paths.jq
 bat list-paths.jq
 jq -r -f list-paths.jq demo-api-openapi.json
 # We now have the raw paths list
-# INVISIBLE: git checkout tags/final list-paths.jq &>/dev/null
+git checkout tags/final list-paths.jq &>/dev/null # INVISIBLE

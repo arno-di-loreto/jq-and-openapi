@@ -1,4 +1,4 @@
-# INVISIBLE: git checkout tags/final list-operations.jq &>/dev/null
+git checkout tags/final list-operations.jq &>/dev/null # INVISIBLE
 # TITLE: API Toolbox - JQ and OpenAPI - Using JQ to extract data from OpenAPI files
 # ROOT: apihandyman.io
 # SECTION: list operations
@@ -54,4 +54,4 @@ jq -f list-operations.jq demo-api-openapi.json | jq -r 'map(if .deprecated then 
 # 🤯 Yes, you can use if condition then filter A else filter B in jq! Here's the full step 3 script
 git checkout tags/list-operations-3 list-operations.jq
 bat -r 42: list-operations.jq
-# INVISIBLE: git checkout tags/final list-operations.jq &>/dev/null
+git checkout tags/final list-operations.jq &>/dev/null # INVISIBLE

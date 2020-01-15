@@ -1,4 +1,4 @@
-# INVISIBLE: git checkout tags/final list-http-status-codes.jq &>/dev/null
+git checkout tags/final list-http-status-codes.jq &>/dev/null # INVISIBLE
 # TITLE: API Toolbox - JQ and OpenAPI - Using JQ to extract data from OpenAPI files
 # ROOT: apihandyman.io
 # SECTION: HTTP status codes
@@ -84,4 +84,4 @@ git checkout tags/list-http-status-codes-5 list-http-status-codes.jq
 bat -r 37: list-http-status-codes.jq
 # Do not forget the -r flag to run the full script
 jq -r -f list-http-status-codes.jq demo-api-openapi.json
-# INVISIBLE: git checkout tags/final list-http-status-codes.jq &>/dev/null
+git checkout tags/final list-http-status-codes.jq &>/dev/null # INVISIBLE

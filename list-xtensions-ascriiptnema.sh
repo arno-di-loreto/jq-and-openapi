@@ -1,4 +1,4 @@
-# INVISIBLE: git checkout tags/final list-xtensions.jq &>/dev/null
+git checkout tags/final list-xtensions.jq &>/dev/null # INVISIBLE
 # TITLE: API Toolbox - JQ and OpenAPI - Using JQ to extract data from OpenAPI files
 # ROOT: apihandyman.io
 # SECTION: list extensions
@@ -59,4 +59,4 @@ jq -r -f list-xtensions.jq demo-api-openapi.json
 git checkout tags/list-xtensions-3 list-xtensions.jq
 bat -r 18: list-xtensions.jq
 jq -r -f list-xtensions.jq demo-api-openapi.json
-# INVISIBLE: git checkout tags/final list-xtensions.jq &>/dev/null
+git checkout tags/final list-xtensions.jq &>/dev/null # INVISIBLE
